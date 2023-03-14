@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <Grid BackgroundColor="SlateGrey">
+            <VerticalStackLayout
+            BackgroundColor="White"
+            
+            
+            Spacing="1"
+            Padding="30"
+            >
+
+               
+
+                <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="counting console apk"
+                TextColor="black"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="click/peek a boo to count"
+                TextColor="black"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to .NET Multi-platform App UI"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="counterBtn"
+                Text="CLICK ME"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center"
+				HeightRequest="50"
+				WidthRequest="280"
+				/>
+
+
+            <Button
+                    x:Name="countertop"
+                    BackgroundColor="HotPink"
+                    Text="peek a boo" 
+                    TextColor="Black"
+                    WidthRequest="250"
+					HeightRequest="50"
+					
+                Clicked="OnPeekClicked"
+                    />
+
+            
+        </VerticalStackLayout>
+
+            <Grid 
+				
+                BackgroundColor="black"
+                VerticalOptions="End"
+                Padding="100">
+                
+                <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="250"
+                 />
+
+                <Label
+                Text="console consecutive counts"
+                TextColor="White"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="28"
+                HorizontalOptions="Center"/>
+
+                <Label
+                Text="press buttons randomly"
+                TextColor="White"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to .NET Multi-platform App UI"
+                FontSize="18"
+                 Padding="50"
+                HorizontalOptions="Center"
+				/>
+
+                <Button 
+                x:Name="CCounterBtn"
+                Text="CLICK ME"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterCClicked"
+                HeightRequest="40"
+			    />
+				
+                 <Button
+                    x:Name="CCountertop"
+                    BackgroundColor="HotPink"
+                    
+                    Text="peek a boo" 
+                    TextColor="Black"
+                    HeightRequest="50"
+                Clicked="OnPeekCClicked"
+                    />
+            </Grid>
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
